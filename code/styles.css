@@ -1,0 +1,59 @@
+table {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #000;
+    width: 20%;
+    border-collapse: collapse;
+    /* 边框合并 */
+}
+
+td {
+    border: 1px solid #000;
+    /* 设置所有单元格的边框 */
+}
+
+td:first-child {
+    border-left: none;
+    /* 取消第一列的左边框 */
+}
+
+td:last-child {
+    border-right: none;
+    /* 取消最后一列的右边框 */
+}
+
+tr:last-child td {
+    border-bottom: none;
+    /* 取消最后一行的底边框 */
+}
+
+tr:first-child td {
+    border-top: none;
+    /* 取消第一行的顶边框 */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 50%;
+    height: 50%;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}

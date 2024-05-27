@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品類別</title>
+    <style>
+        table {
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #000;
+            width: 20%;
+            border-collapse: collapse;
+            /* 边框合并 */
+        }
+
+        td {
+            border: 1px solid #000;
+            /* 设置所有单元格的边框 */
+        }
+
+        td:first-child {
+            border-left: none;
+            /* 取消第一列的左边框 */
+        }
+
+        td:last-child {
+            border-right: none;
+            /* 取消最后一列的右边框 */
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+            /* 取消最后一行的底边框 */
+        }
+
+        tr:first-child td {
+            border-top: none;
+            /* 取消第一行的顶边框 */
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" name="form1" method="post" action="login.php">
+        <table>
+            <tr>
+                <td colspan="2">帳號登入</td>
+            </tr>
+            <tr>
+                <td>電話號碼(10碼)：</td>
+                <td>
+                    <input name="num" type="text" id="num" size="15" maxlength="10" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="button" id="button" value="送出" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
